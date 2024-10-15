@@ -5,6 +5,12 @@ plugins {
     id 'com.google.cloud.tools.jib' version '2.7.0'
 }
 
+jib{
+     container {
+         creationTime = 'USE_CURRENT_TIMESTAMP'
+     }
+}
+
 group = 'com.samsungsds'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
